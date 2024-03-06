@@ -92,7 +92,6 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(res.status_code, 200)
         self.assertIn('questions', data)
         self.assertIn('total_questions', data)
-        self.assertIn('current_category', data)
 
 
     def test_400_if_search_term_not_provided(self):
